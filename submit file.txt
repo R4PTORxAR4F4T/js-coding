@@ -1,0 +1,117 @@
+//================================problem_1
+
+//The function name mindGame that takes number as input. Then the input number is given in to a formula. The expression is (((num * 3) 
++ 10) / 2) - 5. The function multiplies the number by 3, adds 10, divides the result by 2, and then subtracts 5. Then return the result
+
+/*
+function mindGame(num) {
+
+    if ( Number.isInteger(num)){
+        return (((num * 3) + 10) / 2) - 5;
+    }
+    else{
+        return ('Its a invalid input.Pls Input a Number')
+    }
+    
+  }
+*/
+
+
+
+
+
+//================================problem_2
+
+//The function name evenOdd that takes string as input. If the input is a string, It checks the length of the string and returns 
+"even" if the length is an even number, or "odd" if the length is an odd number. If the Input is not a string, it returns a message 
+telling the user to enter a string type input.
+
+/*
+function evenOdd(str) {
+  if (typeof str === 'string'){
+    if(str.length % 2 === 0) {
+      return 'even';
+    } else {
+      return 'odd';
+    }
+  }
+  else{
+    return("Pls enter a string type input");
+  }
+}
+*/
+
+
+
+
+
+//================================problem_3
+
+//This code is a function that takes an integer as an input and returns a statement based on the value of the argument. If the 
+argument is less than 7, the statement will show the difference between the argument and 7. If the argument is greater than 7, the 
+statement will show the double of the argument. If the argument is not an integer, the statement will show an error message.
+
+/*
+function isLGSeven(int) {
+
+    if ( Number.isInteger(int)){
+        if ((int-7) < 7) {
+            return ("Input: " + int + ", Difference: " + (int - 7));
+          } else {
+            return ("Input: " + int + ", Double of input: " + (int*2));
+          }
+    }
+    else{
+        return ('Its a invalid input.Pls Input a Number')
+    }
+}
+*/
+
+
+
+
+
+//================================problem_4
+
+//This code takes an array as an input and checks for any bad data (or negative numbers) in the array. It then returns the count of 
+bad data found in the array. If the given input is not an array, it returns a message asking the user to enter an array type input.
+
+/*
+function findingBadData(arr){
+    let badDataCount = 0;
+
+    if(Array.isArray(arr)){
+        for(let i=0; i<arr.length; i++){
+            if(arr[i] < 0){
+              badDataCount++;
+            }
+          }
+          return badDataCount;
+    }
+    else{
+        return("Pls enter a array type input");
+    }
+  }
+  */
+  
+  
+  
+  
+  
+//================================problem_5
+
+//The function takes three numbers as input (num1, num2 and num3), which represent the number of each type of gem. The function then 
+multiplies those numbers by their corresponding values (21, 32 and 43) and adds those numbers together.if the total is greater than or 
+equal to 2000 then subtracts 2000.else returns the total value of sum.
+
+/*
+function gemsToDiamond(num1, num2, num3) {
+    let sum = (num1 * 21) + (num2 * 32) + (num3 * 43);
+    if (sum >= 2000) {
+      sum = sum- 2000;
+      return sum;
+    } else {
+      return sum;
+    }
+  }
+  */
